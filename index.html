@@ -1,0 +1,139 @@
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animate mobile list</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+    <script src="hammer.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="phone-container">
+        <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+      	.st0{fill:none;stroke:#fc7a53;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3;}
+      	.st1{fill:none;stroke:#fc7a53;stroke-width:3;stroke-miterlimit:3;}
+        .c{fill:none;stroke:#fc7a53;stroke-width:3;stroke-miterlimit:3;}
+        </style><g><path class="st0" d="M117.2,91c0-11.7,0-23.3,0-35c0-23,13.4-40.2,34.6-44.5c3.6-0.7,7.3-0.8,10.9-0.8c62.3,0,124.7-0.1,187,0   c26.8,0,45,18,45,44.8c0,87.2,0,174.3,0,261.5"/><path class="st0" d="M394.8,337c0,0.3,0,0,0,0.3"/><path class="st0" d="M394.8,356.3c0,33.4,0,66.8,0,100.1c0,26.7-18.2,44.7-45,44.8c-62.5,0-125,0-187.5,0c-27.1,0-45-18.1-45-45.2   c0-66.7,0-133.3,0-200c0-40,0-99,0-139"/><path class="st1" d="M256.1,426.8c11.9,0.1,21.1,9.4,21.1,21.4c-0.1,11.9-9.5,21.1-21.4,21.1c-11.9-0.1-21.1-9.4-21.1-21.4   C234.8,435.9,244.2,426.7,256.1,426.8z"/><path class="c" d="M286.7,58.1h-61.5c-2.8,0-5.1-2.3-5.1-5.1v0c0-2.8,2.3-5.1,5.1-5.1h61.5c2.8,0,5.1,2.3,5.1,5.1v0   C291.8,55.8,289.5,58.1,286.7,58.1z"/></g></svg>
+        <div class="phone-content">
+          <div class="item-display">
+            <div class="nav">
+              <div class="nav-content">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="item-content">
+            </div>
+          </div>
+          <div class="content">
+            <div class="scrollbale-content">
+              <ul>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 1</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 2</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 3</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 4</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 5</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 6</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 7</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 8</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 9</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+                <li class="swipe">
+                  <div class="box">
+                    <h1>Title 10</h1>
+                    <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars...</p>
+                  </div>
+                  <div class="toolbox trash"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                  <div class="toolbox view"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="toolbox edit"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

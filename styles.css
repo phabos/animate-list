@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FE9271;
+  font-family: 'Open Sans', serif;
+  color: #333;
+}
+
+.phone-container {
+  margin: calc(50% - 600px) auto 0 auto;
+  width: 900px;
+  position: relative;
+}
+
+.phone-container .phone-content {
+  position: absolute;
+  top: 130px;
+  bottom: 180px;
+  right: 250px;
+  left: 250px;
+  border-radius: 10px;
+  background-color: #F4F4F4;
+  overflow: hidden;
+  border: 3px solid #fc7a53;
+  overflow: hidden;
+}
+
+.phone-container .phone-content .item-display {
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: -100%;
+  right: 0;
+  z-index: 1002;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.phone-container .phone-content .item-display.appear {
+  top: 0px;
+  bottom: 0px;
+}
+
+.phone-container .phone-content .item-display .item-content{
+  margin: 50px 0 0 0;
+}
+
+.phone-container .phone-content .item-display .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FE9271;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+}
+
+.phone-container .phone-content .item-display .nav-content {
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.phone-container .phone-content .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.phone-container .phone-content .content ul,
+.phone-container .phone-content .content li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.phone-container .phone-content .content li {
+  border-bottom: 3px solid #E5E5E5;
+  padding: 15px;
+  position: relative;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  height: 105px;
+  opacity: 1;
+}
+
+.phone-container .phone-content .item-display .item-content h1,
+.phone-container .phone-content .content h1 {
+  font-size: 34px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  margin: 5px 0 0 0;
+}
+.phone-container .phone-content .item-display .item-content p,
+.phone-container .phone-content .content p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.phone-container .phone-content .content li.removed {
+  overflow: hidden;
+  display: block;
+  height: 0;
+  opacity: 0;
+  padding: 0;
+}
+
+.phone-container .phone-content .content li .toolbox {
+  position: absolute;
+  right: -100px;
+  top: 0;
+  width: 80px;
+  bottom: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 30px;
+  padding: 10px;
+  color: #fff;
+}
+
+.phone-container .phone-content .content li div.toolbox:nth-child(4) {
+  background-color: #fc663c;
+}
+
+.phone-container .phone-content .content li div.toolbox:nth-child(2) {
+  background-color: #fc7a53;
+}
+
+.phone-container .phone-content .content li div.toolbox:nth-child(3) {
+  background-color: #FE9271;
+}
+
+.phone-container .phone-content .content li .box{
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.phone-container .phone-content .content li.animate {
+  background-color: #E5E5E5;
+}
+
+.phone-container .phone-content .content li.animate .box{
+  -webkit-transform: translate(-100px,0);
+  -moz-transform: translate(-100px,0);
+  -o-transform: translate(-100px,0);
+  -ms-transform: translate(-100px,0);
+  transform: translate(-100px,0);
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+  color: transparent;
+}
+
+.phone-container .phone-content .content li.animate div.toolbox:nth-child(4) {
+  -webkit-transform: translate(-100px,0);
+  -moz-transform: translate(-100px,0);
+  -o-transform: translate(-100px,0);
+  -ms-transform: translate(-100px,0);
+  transform: translate(-100px,0);
+}
+
+.phone-container .phone-content .content li.animate div.toolbox:nth-child(2) {
+  -webkit-transform: translate(-200px,0);
+  -moz-transform: translate(-200px,0);
+  -o-transform: translate(-200px,0);
+  -ms-transform: translate(-200px,0);
+  transform: translate(-200px,0);
+}
+
+.phone-container .phone-content .content li.animate div.toolbox:nth-child(3) {
+  -webkit-transform: translate(-300px,0);
+  -moz-transform: translate(-300px,0);
+  -o-transform: translate(-300px,0);
+  -ms-transform: translate(-300px,0);
+  transform: translate(-300px,0);
+}
+
+@media (max-width: 800px) {
+  svg {
+    display: none;
+  }
+  .phone-container {
+    position: absolute;
+    top: 0;
+    margin: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  .phone-container .phone-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    background-color: #F4F4F4;
+    border: 0px;
+  }
+}
