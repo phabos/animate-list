@@ -7,7 +7,7 @@ body {
 }
 
 .phone-container {
-  margin: calc(50% - 600px) auto 0 auto;
+  margin: 0 auto;
   width: 900px;
   position: relative;
 }
